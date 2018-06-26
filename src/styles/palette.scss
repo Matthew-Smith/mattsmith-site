@@ -1,3 +1,4 @@
+$black: #0D0D13;
 $dark-grey: #272D3A;
 $light-grey: #C4C5C9;
 $white: #EBEFF4;
@@ -11,3 +12,4 @@ $tertiary-accent: $orange;
 $font-white: $white;
 $background-light: $white;
 $background-dark: $dark-grey;
+$overlay-color: darken($dark-grey, 30%);

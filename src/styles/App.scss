@@ -5,8 +5,8 @@
 
     .header {
         background-color: $dark-grey;
-        height: 150px;
-        padding: 20px;
+        height: 2em;
+        padding: 1.2em;
         color: $font-white;
     }
 
@@ -16,5 +16,20 @@
 
     .intro {
         font-size: large;
+    }
+
+    .popupOverlay {
+        opacity: 0.9;
+        background: $overlay-color;
+        width: 100%;
+        height: 100%;
+        z-index: 10;
+        top: 0;
+        left: 0;
+        position: fixed;
+        visibility: hidden;
+    }
+    .show {
+        visibility: visible;
     }
 }

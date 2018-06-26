@@ -17,8 +17,8 @@ class Profile extends Component {
                     <div className='overlay'>
                         <h2>{this.props.firstName}<span>{this.props.lastName}</span></h2>
                         <span className='icon-links'>
-                            <a href={this.props.twitterURL}>
-                                <span className='fa fa-twitter'> </span>
+                            <a href={this.props.emailURL}>
+                                <span className='fa fa-envelope'> </span>
                             </a>
                             <a href={this.props.githubURL}>
                                 <span className='fa fa-github'> </span>

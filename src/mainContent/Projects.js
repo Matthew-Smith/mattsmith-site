@@ -1,19 +1,20 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 
+import AtomGlowingCursor from './ProjectsToShow/AtomGlowingCursor';
+import Deckitron from './ProjectsToShow/Deckitron';
+import ElectronCalc from './ProjectsToShow/ElectronCalc';
+import MattSmithSite from './ProjectsToShow/MattSmithSite';
+import MenuSystem from './ProjectsToShow/MenuSystem';
 
 class Projects extends Component {
     render() {
         return <div>
-            <a href='https://github.com/Matthew-Smith/mattsmith-site'>This Website</a>
-            <hr />
-            <a href='http://deckitron.mattsmith.site'>Deckitron</a>
-            <hr />
-            <a href='http://menusystem.mattsmith.site'>Menu System</a>
-            <hr />
-            <a href='https://github.com/Matthew-Smith/electronCalc'>Calculator in Electron</a>
-            <hr />
-            <a href='https://atom.io/packages/glowing-cursor'>Atom.io Glowing Cursor</a>
+            <MattSmithSite />
+            <Deckitron />
+            <ElectronCalc />
+            <MenuSystem />
+            <AtomGlowingCursor />
         </div>;
     }
 }

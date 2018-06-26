@@ -9,7 +9,7 @@ class Home extends Component {
             The primary purpose was to learn about using React and Redux however it will serve as my personal website going forward.
             <br/>
             <br/>
-            You will also notice that this site is still in development at this point!
+            You will also notice that this site is still in development at this point! If you would like to follow its development please check out its repository at https://github.com/Matthew-Smith/mattsmith-site
         </div>;
     }
 }

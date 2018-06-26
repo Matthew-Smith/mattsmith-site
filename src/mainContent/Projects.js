@@ -5,6 +5,8 @@ import PropTypes from 'prop-types';
 class Projects extends Component {
     render() {
         return <div>
+            <a href='https://github.com/Matthew-Smith/mattsmith-site'>This Website</a>
+            <hr />
             <a href='http://deckitron.mattsmith.site'>Deckitron</a>
             <hr />
             <a href='http://menusystem.mattsmith.site'>Menu System</a>

@@ -7,6 +7,9 @@ import ElectronCalc from './ProjectsToShow/ElectronCalc';
 import MattSmithSite from './ProjectsToShow/MattSmithSite';
 import MenuSystem from './ProjectsToShow/MenuSystem';
 
+import './styles/Projects.css';
+import './styles/mainContent.css';
+
 class Projects extends Component {
     render() {
         return <div>

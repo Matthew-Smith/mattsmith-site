@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import ProjectCard from './ProjectCard';
+
+const exampleURL = 'https://media.githubusercontent.com/media/Matthew-Smith/electronCalc/master/screenshot.png';
 
 class ElectronCalc extends Component {
     render() {
-        return <div>
-            <a href='https://github.com/Matthew-Smith/electronCalc'>Calculator in Electron</a>
-            <hr />
-        </div>;
+        return (<ProjectCard
+                headerText='Simple Electron Calculator App'
+                anchorName='ElectronCalculator'>
+            <img src={exampleURL} alt="Example" className='mainImage'/>
+            View it on <a href='ttps://github.com/Matthew-Smith/electronCalc'>Github</a>
+        </ProjectCard>)
     }
 }
-ElectronCalc.contextTypes = {
-    store: PropTypes.object
-};
 
 export default ElectronCalc;
 

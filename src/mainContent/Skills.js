@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-import ReactTable from "react-table";
+import ReactTable from 'react-table';
 import { columns, data } from './SkillsToShow/data';
 
 import 'react-table/react-table.css';
-import './Skills.css';
+import './styles/Skills.css';
 
 class Skills extends Component {
     render() {
@@ -17,7 +17,10 @@ class Skills extends Component {
                         desc: true
                     }
                 ]}
-                className="-striped -highlight"
+                className='-striped -highlight'
+                showPagination={false}
+                minRows={0}
+                pageSize={100}
             />
         </div>;
     }

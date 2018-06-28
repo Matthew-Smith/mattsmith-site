@@ -3,10 +3,12 @@ import PropTypes from 'prop-types';
 
 import Profile from '../Profile/Profile';
 
+import './styles/About.css';
+import './styles/mainContent.css';
 
 class About extends Component {
     render() {
-        return <div>
+        return <div className="contentCard">
             <Profile />
             My name is Matthew Smith and I live in Ottawa Ontario Canada!
         </div>;

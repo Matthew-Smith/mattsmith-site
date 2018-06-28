@@ -1,16 +1,14 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import ProjectCard from './ProjectCard';
 
 class MattSmithSite extends Component {
     render() {
-        return <div>
-            <a href='https://github.com/Matthew-Smith/mattsmith-site'>This Website</a>
-            <hr />
-        </div>;
+        return (<ProjectCard
+                headerText='This Website - Built with React'
+                anchorName='ThisWebsite'>
+            View it on <a href='https://github.com/Matthew-Smith/mattsmith-site'>Github</a>
+        </ProjectCard>)
     }
 }
-MattSmithSite.contextTypes = {
-    store: PropTypes.object
-};
 
 export default MattSmithSite;

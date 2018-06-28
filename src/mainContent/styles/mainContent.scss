@@ -1,0 +1,44 @@
+@import "../../styles/palette.scss";
+
+$border-radius: 5px;
+
+.contentCard {
+    margin: 1em auto;
+    background: $white;
+    padding: 1em;
+    width: 50em;
+    text-align: left;
+    box-shadow: $content-box-shadow;
+    border-radius: $border-radius;
+
+    a {
+        outline: none;
+        text-decoration: none;
+        padding: 2px 1px 0;
+    }
+
+    a:link {
+        color: $primary-accent;
+    }
+
+    a:visited {
+        color: $primary-accent;
+    }
+
+    a:focus {
+        border-bottom: 1px solid;
+        color: $tertiary-accent;
+        background: lighten($tertiary-accent, 30%);
+    }
+
+    a:hover {
+        border-bottom: 1px solid;
+        color: $tertiary-accent;
+        background: lighten($tertiary-accent, 30%);
+    }
+
+    a:active {
+        color: $primary-accent;
+        background: lighten($tertiary-accent, 30%);
+    }
+}

@@ -27,10 +27,12 @@ const checkUsageAccessor = function (header, data) {
 let usageColumns = ((usages) => {
     let uses = [];
     for (let key in usages) {
+        let header = usages[key];
         uses.push({
             id: key,
-            Header: usages[key],
-            accessor: checkUsageAccessor.bind(null, usages[key])
+            Header: header,
+            accessor: checkUsageAccessor.bind(null, header),
+            width: Math.min(11 * header.replace(/\s/g, '').length, 240)
         })
     }
     return uses;

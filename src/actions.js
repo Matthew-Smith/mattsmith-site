@@ -1,6 +1,6 @@
-export const showPopup = popupURL => ({
+export const showPopup = popupData => ({
     type: 'SHOW_POPUP',
-    popupURL
+    popupData
 });
 
 export const hidePopup = () => ({

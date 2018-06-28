@@ -11,8 +11,21 @@ import Projects from './mainContent/Projects';
 import Skills from './mainContent/Skills';
 
 import './styles/App.css';
+import Popup from './Popup';
 
 class App extends Component {
+
+    renderPopup() {
+        const state = this.context.store.getState();
+        if (state.popupData.URL) {
+            return (<Popup
+                URL={state.popupData.URL}
+                width={state.popupData.width}
+                height={state.popupData.height}
+            />);
+        }
+    }
+
     render() {
         const { store } = this.context;
         const state = store.getState();
@@ -21,7 +34,7 @@ class App extends Component {
             tabs.push(<Tab key={contentTabs[key].title} {...contentTabs[key]} />);
         }
         return (
-        <div className='App'>
+        <div id='App' className='App'>
             <header className='header'>
             {tabs}
             </header>
@@ -31,7 +44,7 @@ class App extends Component {
                 <Route exact path='/skills' component={Skills} />
                 <Route exact path='/projects' component={Projects} />
             </div>
-            <div className={'popupOverlay ' + (state.popupURL ? 'show' : '')}></div>
+            {this.renderPopup()}
         </div>
         );
     }

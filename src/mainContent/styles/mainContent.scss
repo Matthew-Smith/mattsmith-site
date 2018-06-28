@@ -41,4 +41,8 @@ $border-radius: 5px;
         color: $primary-accent;
         background: lighten($tertiary-accent, 30%);
     }
+
+    h2 {
+        margin-top: 0;
+    }
 }

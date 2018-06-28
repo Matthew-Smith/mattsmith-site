@@ -207,14 +207,3 @@ export const data = [
         ]
     }
 ];
-
-/*
-[
-    USAGES.personal,
-    USAGES.coreAVI,
-    USAGES.espial,
-    USAGES.dnd,
-    USAGES.carleton,
-    USAGES.algonquin
-]
-*/

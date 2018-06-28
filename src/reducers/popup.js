@@ -1,16 +1,22 @@
+const defaultState = {
+    URL: ''
+};
 
-const popupURL = (state = '', action) => {
+const popupData = (state = defaultState, action) => {
     switch (action.type) {
         case 'SHOW_POPUP':
-            return action.popupURL;
+            return {
+                ...state,
+                popupData: action.popupData
+            };
         case 'HIDE_POPUP':
             return {
                 ...state,
-                popupURL: ''
+                popupData: defaultState
             };
         default:
             return state;
     }
 };
 
-export default popupURL;
+export default popupData;

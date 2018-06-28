@@ -10,6 +10,23 @@ class ElectronCalc extends Component {
                 anchorName='ElectronCalculator'>
             <img src={exampleURL} alt="Example" className='mainImage'/>
             View it on <a href='ttps://github.com/Matthew-Smith/electronCalc'>Github</a>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
+            <br/>
         </ProjectCard>)
     }
 }

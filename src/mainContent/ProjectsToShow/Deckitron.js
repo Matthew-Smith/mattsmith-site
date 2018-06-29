@@ -5,6 +5,7 @@ import { showPopup } from '../../actions';
 import ProjectCard from './ProjectCard';
 
 const tryItURL = 'http://deckitron.mattsmith.site';
+const screenshot = 'https://raw.githubusercontent.com/Matthew-Smith/deckitron/master/docs/screenshot.png';
 
 let store;
 
@@ -12,6 +13,7 @@ const Deckitron = ({ showPopup }) => {
     return (<ProjectCard
             headerText='Deckitron - Magic The Gathering Deck Building'
             anchorName='Deckitron'>
+        <img src={screenshot} alt='Screenshot' className='mainImage'/>
         <h2><a href={tryItURL} onClick={(event) =>{
             event.preventDefault();
             showPopup({

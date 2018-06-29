@@ -1,5 +1,7 @@
 const defaultState = {
-    URL: ''
+    popupData: {
+        URL: ''
+    }
 };
 
 const popupData = (state = defaultState, action) => {

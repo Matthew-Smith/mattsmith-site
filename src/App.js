@@ -10,21 +10,11 @@ import Home from './mainContent/Home';
 import Projects from './mainContent/Projects';
 import Skills from './mainContent/Skills';
 
-import './styles/App.css';
 import Popup from './Popup';
 
-class App extends Component {
+import './styles/App.css';
 
-    renderPopup() {
-        const state = this.context.store.getState();
-        if (state.popupData.URL) {
-            return (<Popup
-                URL={state.popupData.URL}
-                width={state.popupData.width}
-                height={state.popupData.height}
-            />);
-        }
-    }
+class App extends Component {
 
     render() {
         const { store } = this.context;
@@ -44,7 +34,7 @@ class App extends Component {
                 <Route exact path='/skills' component={Skills} />
                 <Route exact path='/projects' component={Projects} />
             </div>
-            {this.renderPopup()}
+            <Popup/>
         </div>
         );
     }

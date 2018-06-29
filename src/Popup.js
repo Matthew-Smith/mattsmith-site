@@ -1,48 +1,41 @@
 import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+// import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 
 import { hidePopup } from './actions';
 
 import './styles/Popup.css';
 
-class Popup extends Component {
-
-    static defaultProps = {
-        width: '90%',
-        height: '90%',
-        title: 'Try It Out'
+const Popup = ({ popupData, hidePopup }) => {
+    if (!popupData.URL) {
+        return null;
     }
-
-    hidePopup(event) {
-        event.preventDefault();
-        hidePopup();
-    }
-
-    render() {
-        return (
-        <div className={'popupOverlay'} onClick={this.hidePopup}>
-            <div className='popup'
-                style={{
-                    width: this.props.width,
-                    height: this.props.height
-                }}>
-                <button className='closeButton'><span /></button>
-                <iframe
-                    src={this.props.URL}
-                    title={this.props.title}
-                >
-                </iframe>
-            </div>
-        </div>)
-    }
+    return (
+    <div className={'popupOverlay'} onClick={hidePopup}>
+        <div className='popup'
+            style={{
+                width: popupData.width,
+                height: popupData.height
+            }}>
+            <button className='closeButton' onClick={hidePopup}><span /></button>
+            <iframe
+                src={popupData.URL}
+                title='Try it Out'
+            >
+            </iframe>
+        </div>
+    </div>)
 }
 
-Popup.propTypes = {
-    width: PropTypes.string,
-    height: PropTypes.string,
-    URL: PropTypes.string.isRequired,
-    title: PropTypes.string
-}
+const mapStateToProps = state => {
+    return state.popupData;
+};
 
-export default Popup;
+const mapDispatchToProps = dispatch => ({
+    hidePopup: popupData => dispatch(hidePopup(popupData))
+});
 
+export default connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Popup);

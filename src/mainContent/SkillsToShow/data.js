@@ -50,11 +50,11 @@ export const columns = [
         accessor: 'years',
         width: 150
     },
-    {
-        Header: 'Usage Category',
-        accessor: 'category',
-        width: 150
-    },
+    // {
+    //     Header: 'Usage Category',
+    //     accessor: 'category',
+    //     width: 150
+    // },
     ...usageColumns
 ];
 

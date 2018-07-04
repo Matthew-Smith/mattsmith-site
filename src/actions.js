@@ -7,9 +7,9 @@ export const hidePopup = () => ({
   type: "HIDE_POPUP"
 });
 
-export const setSidebarOpen = open => ({
+export const setSidebarOpen = sidebarOpen => ({
   type: "SET_SIDEBAR_OPEN",
-  open
+  sidebarOpen
 });
 
 export const setMenuFixed = fixed => ({

@@ -17,12 +17,12 @@ class AtomGlowingCursor extends Component {
         <br />
         View it on{" "}
         <a href="https://github.com/Matthew-Smith/atom-glowing-cursor">
-          Github
+          GitHub
         </a>
         <br />
         <br />
         Built for aesthetic purposes using Less and CoffeeScript, this is a
-        plugin for Github’s Atom.io text editor. This plugin causes the user’s
+        plugin for GitHub’s Atom.io text editor. This plugin causes the user’s
         cursor to glow a customizable colour.
       </ProjectCard>
     );

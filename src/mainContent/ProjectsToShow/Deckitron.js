@@ -35,7 +35,7 @@ const Deckitron = ({ showPopup }) => {
         cards will not show up the first time.
       </li>
       <br />
-      View it on <a href="https://github.com/deckitron/deckitron">Github</a>
+      View it on <a href="https://github.com/deckitron/deckitron">GitHub</a>
       <br />
       <br />
       <br />

@@ -14,7 +14,11 @@ const Contact = () => {
         <p>Please feel free to reach out about anything.</p>
         <p>
           Feel free to use this form or email me{" "}
-          <a href="mailto:matt@mattsmith.site">directly</a>
+          <a href="mailto:matt@mattsmith.site">directly</a> or find me on{" "}
+          <a href="https://github.com/Matthew-Smith">GitHub</a> and{" "}
+          <a href="https://www.linkedin.com/in/matthew-smith-52553b66/">
+            Linkedin
+          </a>
         </p>
         <Form ref={ref => (this.form = ref)}>
           <Form.Group widths="equal">

@@ -29,7 +29,7 @@ const MenuSystem = ({ showPopup }) => {
       </h2>
       <br />
       View it on{" "}
-      <a href="https://github.com/Matthew-Smith/MenuSystem">Github</a>
+      <a href="https://github.com/Matthew-Smith/MenuSystem">GitHub</a>
       <br />
       <br />
       This is a demonstration of using 2d canvases as textures for displaying

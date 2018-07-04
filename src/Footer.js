@@ -20,7 +20,7 @@ class Footer extends Component {
                     Linkedin
                   </List.Item>
                   <List.Item as="a" href="https://github.com/Matthew-Smith">
-                    Github
+                    GitHub
                   </List.Item>
                   <List.Item as="a" href="mailto:matt@mattsmith.site">
                     Email

@@ -9,7 +9,7 @@ class MattSmithSite extends Component {
         anchorName="ThisWebsite"
       >
         View it on{" "}
-        <a href="https://github.com/Matthew-Smith/mattsmith-site">Github</a>
+        <a href="https://github.com/Matthew-Smith/mattsmith-site">GitHub</a>
         <br />
         <br />
         This Website was built primarily with the purpose of learning React and

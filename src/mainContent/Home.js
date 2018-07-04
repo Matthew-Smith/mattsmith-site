@@ -38,7 +38,7 @@ const Home = () => {
                 I have sample projects
               </Header>
               <p className="homeTextBody">
-                I have selected a couple sample projects from my Github that I
+                I have selected a couple sample projects from my GitHub that I
                 am either particularly proud of or that I think are pretty cool.
               </p>
               <NavLink to="/projects">

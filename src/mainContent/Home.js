@@ -41,18 +41,14 @@ const Home = () => {
                 I have selected a couple sample projects from my Github that I
                 am either particularly proud of or that I think are pretty cool.
               </p>
-            </Grid.Column>
-            <Grid.Column floated="right" width={6}>
-              <Profile />
-            </Grid.Column>
-          </Grid.Row>
-          <Grid.Row>
-            <Grid.Column textAlign="left">
               <NavLink to="/projects">
                 <Button size="huge" onClick={goToTop}>
                   Check Them Out
                 </Button>
               </NavLink>
+            </Grid.Column>
+            <Grid.Column floated="right" width={6}>
+              <Profile />
             </Grid.Column>
           </Grid.Row>
         </Grid>

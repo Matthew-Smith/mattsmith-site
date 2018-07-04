@@ -16,7 +16,7 @@ const Contact = () => {
           Feel free to use this form or email me{" "}
           <a href="mailto:matt@mattsmith.site">directly</a>
         </p>
-        <Form ref={ref => (this.form = ref)} onValidSubmit={this.onValidSubmit}>
+        <Form ref={ref => (this.form = ref)}>
           <Form.Group widths="equal">
             <Form.Input
               disabled={disabled}
@@ -25,10 +25,6 @@ const Contact = () => {
               label="Your Name"
               placeholder="Your name"
               validations="isWords"
-              errorLabel={<Label color="red" pointing />}
-              validationErrors={{
-                isDefaultRequiredValue: "Name is Required"
-              }}
             />
             <Form.Input
               disabled={disabled}
@@ -36,10 +32,6 @@ const Contact = () => {
               name="email"
               label="Your Email"
               placeholder="email@example.com"
-              errorLabel={<Label color="red" pointing />}
-              validationErrors={{
-                isDefaultRequiredValue: "Email is Required"
-              }}
             />
           </Form.Group>
 
@@ -49,10 +41,6 @@ const Contact = () => {
             name="title"
             label="Message Title"
             placeholder="Title of the message"
-            errorLabel={<Label color="red" pointing />}
-            validationErrors={{
-              isDefaultRequiredValue: "Email is Required"
-            }}
           />
 
           <Form.TextArea
@@ -61,10 +49,6 @@ const Contact = () => {
             label="Message"
             placeholder="What would you like to contact me about"
             required
-            errorLabel={<Label color="red" pointing />}
-            validationErrors={{
-              isDefaultRequiredValue: "We need to know more about you"
-            }}
           />
 
           <Form.Checkbox

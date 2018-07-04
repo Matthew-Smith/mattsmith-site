@@ -1,11 +1,13 @@
-import { combineReducers } from 'redux';
-import { routerReducer } from 'react-router-redux';
+import { combineReducers } from "redux";
+import { routerReducer } from "react-router-redux";
 
-import popupData from './popup';
-import theme from './theme';
+import popupData from "./popup";
+import menuFixed from "./menu";
+import mobile from "./mobile";
 
 export default combineReducers({
-    popupData,
-    theme,
-    routerReducer
+  popupData,
+  menuFixed,
+  mobile,
+  routerReducer
 });

@@ -1,18 +1,23 @@
 export const showPopup = popupData => ({
-    type: 'SHOW_POPUP',
-    popupData
+  type: "SHOW_POPUP",
+  popupData
 });
 
 export const hidePopup = () => ({
-    type: 'HIDE_POPUP'
+  type: "HIDE_POPUP"
 });
 
-export const setTheme = theme => ({
-    type: 'SET_THEME',
-    theme
+export const setSidebarOpen = open => ({
+  type: "SET_SIDEBAR_OPEN",
+  open
 });
 
-export const Themes = {
-    DARK: 'DARK',
-    LIGHT: 'LIGHT'
-};
+export const setMenuFixed = fixed => ({
+  type: "SET_MENU_FIXED",
+  fixed
+});
+
+export const setMobile = mobile => ({
+  type: "SET_MOBILE",
+  mobile
+});

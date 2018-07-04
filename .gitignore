@@ -22,3 +22,6 @@ yarn-error.log*
 
 # since we use sass we don't need to track css files
 src/**/*.css
+
+# vscode meta
+.vscode/

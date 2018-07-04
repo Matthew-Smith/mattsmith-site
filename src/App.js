@@ -1,47 +1,26 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
-import { Route } from 'react-router';
+import React from "react";
+import { Route } from "react-router";
 
-import Tab from './Tab';
-import contentTabs from './contentTabs.json';
+import ResponsiveContainer from "./ResponsiveContainer/ResponsiveContainer";
+import Footer from "./Footer";
+import Home from "./mainContent/Home";
+import Projects from "./mainContent/Projects";
+import Skills from "./mainContent/Skills";
+import Contact from "./mainContent/Contact";
 
-import About from './mainContent/About';
-import Home from './mainContent/Home';
-import Projects from './mainContent/Projects';
-import Skills from './mainContent/Skills';
+import Popup from "./Popup";
 
-import Popup from './Popup';
+import "semantic-ui-css/semantic.min.css";
 
-import './styles/App.css';
-
-class App extends Component {
-
-    render() {
-        const { store } = this.context;
-        const state = store.getState();
-        let tabs = [];
-        for (let key in contentTabs) {
-            tabs.push(<Tab key={contentTabs[key].title} {...contentTabs[key]} />);
-        }
-        return (
-        <div id='App' className='App'>
-            <header className='header'>
-            {tabs}
-            </header>
-            <div className='contentBody'>
-                <Route exact path='/' component={Home} />
-                <Route exact path='/about' component={About} />
-                <Route exact path='/skills' component={Skills} />
-                <Route exact path='/projects' component={Projects} />
-            </div>
-            <Popup/>
-        </div>
-        );
-    }
-}
-App.contextTypes = {
-    store: PropTypes.object
-};
-
+const App = () => (
+  <ResponsiveContainer>
+    <Route exact path="/" component={Home} />
+    <Route exact path="/skills" component={Skills} />
+    <Route exact path="/projects" component={Projects} />
+    <Route exact path="/contact" component={Contact} />
+    <Footer />
+    <Popup />
+  </ResponsiveContainer>
+);
 
 export default App;

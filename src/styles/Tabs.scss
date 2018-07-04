@@ -10,7 +10,6 @@
     margin-top: 1em;
     padding-top: 0.4em;
     padding-bottom: 0.5em;
-    display: inline-block;
 
     &:hover {
         background: lighten($dark-grey, 10%);
@@ -18,5 +17,6 @@
 }
 
 .selected {
-    border-top: 2px solid $secondary-accent;
+    background: $secondary-accent;
+    color: $tertiary-accent;
 }

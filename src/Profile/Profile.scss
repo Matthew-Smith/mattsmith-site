@@ -1,120 +1,118 @@
 @import "../styles/palette.scss";
 
 .profile {
-    float: right;
-    width: 200px;
-    height: 200px;
+  float: right;
 }
 .hovereffect {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  cursor: default;
+  img {
+    min-height: 100%;
+    max-width: 100%;
+    display: block;
     position: relative;
-    text-align: center;
-    cursor: default;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+  }
+  &:hover {
     img {
-        min-height: 100%;
-        max-width: 100%;
-        display: block;
-        position: relative;
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-    }
-    &:hover {
-        img {
-            -webkit-transform: translate3d(0, -10%, 0);
-            transform: translate3d(0, -10%, 0);
-        }
-
-        .overlay {
-            box-shadow: 0px 0px 10px rgba(0,0,0,.8);
-            -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-            h2 {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-            }
-            span.icon-links {
-                -webkit-transform: translate3d(0, 0, 0);
-                transform: translate3d(0, 0, 0);
-                a {
-                    -webkit-transform: translate3d(0, 0, 0);
-                    transform: translate3d(0, 0, 0);
-                    &:hover, &:focus {
-                        color: $tertiary-accent;
-                    }
-                }
-            }
-        }
-        h2 {
-            -webkit-transition-delay: 0.05s;
-            transition-delay: 0.05s;
-        }
+      -webkit-transform: translate3d(0, -10%, 0);
+      transform: translate3d(0, -10%, 0);
     }
 
     .overlay {
-        width: 100%;
-        position: absolute;
-        overflow: hidden;
-        left: 0;
-        top: auto;
-        bottom: 0;
-        padding: 0.75em;
-        padding-left: 0.5em;
-        height: 1.5em;
-        background: $primary-accent;
+      box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.8);
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+      h2 {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+      }
+      span.icon-links {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+        a {
+          -webkit-transform: translate3d(0, 0, 0);
+          transform: translate3d(0, 0, 0);
+          &:hover,
+          &:focus {
+            color: $tertiary-accent;
+          }
+        }
+      }
+    }
+    h2 {
+      -webkit-transition-delay: 0.05s;
+      transition-delay: 0.05s;
+    }
+  }
+
+  .overlay {
+    width: 100%;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: auto;
+    bottom: 0;
+    padding: 1em;
+    padding-left: 1em;
+    height: 5em;
+    background: $primary-accent;
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+    h2 {
+      -webkit-transition: -webkit-transform 0.35s;
+      transition: transform 0.35s;
+      -webkit-transform: translate3d(0, 200%, 0);
+      transform: translate3d(0, 200%, 0);
+      visibility: visible;
+
+      font-weight: 300;
+      text-transform: uppercase;
+      color: $dark-grey;
+      text-align: center;
+      position: relative;
+      font-size: 2em;
+      padding: 0px;
+      float: left;
+      margin: 0px;
+      display: inline-block;
+      span {
+        font-weight: 800;
+      }
+    }
+    span.icon-links {
+      a {
+        color: $dark-grey;
+        font-size: 2.5em;
         -webkit-transition: -webkit-transform 0.35s;
         transition: transform 0.35s;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-        h2 {
-            -webkit-transition: -webkit-transform 0.35s;
-            transition: transform 0.35s;
-            -webkit-transform: translate3d(0, 200%, 0);
-            transform: translate3d(0, 200%, 0);
-            visibility: visible;
-
-            font-weight: 300;
-            text-transform: uppercase;
-            color: $dark-grey;
-            text-align: center;
-            position: relative;
-            font-size: 1em;
-            padding: 0px;
-            float: left;
-            margin: 0px;
-            display: inline-block;
-            span {
-                font-weight: 800;
-            }
-        }
-        span.icon-links {
-            a {
-                color: $dark-grey;
-                font-size: 1.5em;
-                -webkit-transition: -webkit-transform 0.35s;
-                transition: transform 0.35s;
-                -webkit-transform: translate3d(0, 200%, 0);
-                transform: translate3d(0, 200%, 0);
-                visibility: visible;
-                padding: 1em 0.1em;
-            }
-        }
+        -webkit-transform: translate3d(0, 200%, 0);
+        transform: translate3d(0, 200%, 0);
+        visibility: visible;
+        padding: 1em 0.1em;
+      }
     }
+  }
 }
 
-
 .hovereffect:hover .overlay span.icon-links a {
-    &:nth-child(3) {
-        -webkit-transition-delay: 0.2s;
-        transition-delay: 0.2s;
-    }
-    &:nth-child(2) {
-        -webkit-transition-delay: 0.3s;
-        transition-delay: 0.3s;
-    }
-    &:first-child {
-        -webkit-transition-delay: 0.4s;
-        transition-delay: 0.4s;
-    }
+  &:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+  }
+  &:nth-child(2) {
+    -webkit-transition-delay: 0.3s;
+    transition-delay: 0.3s;
+  }
+  &:first-child {
+    -webkit-transition-delay: 0.4s;
+    transition-delay: 0.4s;
+  }
 }

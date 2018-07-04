@@ -1,0 +1,26 @@
+h1.ui.inverted.header.myName {
+  font-size: 4em;
+  font-weight: normal;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  &.mobile {
+    font-size: 2em;
+    margin-top: 1.5em;
+  }
+}
+
+h2.ui.inverted.header.shortDescription {
+  font-size: 1.7em;
+  font-weight: normal;
+  margin-top: 1em;
+
+  &.mobile {
+    font-size: 1.5em;
+    margin-top: 0.5em;
+  }
+}
+
+.headerContainer {
+  margin: 3em;
+}

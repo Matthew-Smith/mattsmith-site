@@ -1,12 +1,8 @@
 @import "palette.scss";
 
-.App {
-    text-align: center;
-
-    .header {
-        background-color: $dark-grey;
-        height: 2em;
-        padding: 1.2em;
-        color: $font-white;
-    }
+.header {
+    background-color: $dark-grey;
+    height: 2em;
+    padding: 1.2em;
+    color: $font-white;
 }

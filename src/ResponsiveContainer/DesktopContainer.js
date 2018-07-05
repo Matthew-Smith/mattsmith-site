@@ -4,13 +4,7 @@ import { connect } from "react-redux";
 import { Route } from "react-router";
 import { NavLink } from "react-router-dom";
 import { goToTop } from "react-scrollable-anchor";
-import {
-  Container,
-  Menu,
-  Responsive,
-  Segment,
-  Visibility
-} from "semantic-ui-react";
+import { Container, Menu, Segment, Visibility } from "semantic-ui-react";
 
 import { setMenuFixed } from "../actions";
 import Header from "./Header";
@@ -22,7 +16,7 @@ const DesktopContainer = ({
   makeMenuNotFixed
 }) => {
   return (
-    <Responsive {...Responsive.onlyComputer}>
+    <div>
       <Visibility
         once={false}
         onBottomPassed={makeMenuFixed}
@@ -56,7 +50,7 @@ const DesktopContainer = ({
       </Visibility>
 
       {children}
-    </Responsive>
+    </div>
   );
 };
 

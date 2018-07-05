@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Form, Label, Container, Segment, Header } from "semantic-ui-react";
+import { Form, Container, Segment, Header } from "semantic-ui-react";
 
 import "./styles/Contact.css";
 

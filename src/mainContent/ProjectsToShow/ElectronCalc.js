@@ -1,40 +1,33 @@
-import React, { Component } from "react";
-import ProjectCard from "./ProjectCard";
+import React from "react";
+import { Card, Icon, Image, Button } from "semantic-ui-react";
 
 const screenshot =
   "https://media.githubusercontent.com/media/Matthew-Smith/electronCalc/master/screenshot.png";
 
-class ElectronCalc extends Component {
-  render() {
-    return (
-      <ProjectCard
-        headerText="Simple Electron Calculator App"
-        anchorName="ElectronCalculator"
-      >
-        <img src={screenshot} alt="Example" className="mainImage" />
-        View it on{" "}
-        <a href="ttps://github.com/Matthew-Smith/electronCalc">Github</a>
-        <br />
-        <br />
-        Created a simple calculator to learn about electron. Has a history
-        window that communicates back and forth using IPC.
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-      </ProjectCard>
-    );
-  }
-}
+const ElectronCalc = () => {
+  return (
+    <Card fluid>
+      <Image src={screenshot} />
+      <Card.Content>
+        <Card.Header>Simple Electron Calculator App</Card.Header>
+        <Card.Meta>June 2018</Card.Meta>
+        <Card.Description>
+          Created a simple calculator to learn about electron. Has a history
+          window that communicates back and forth using IPC.
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
+        <a
+          href="https://github.com/Matthew-Smith/electronCalc"
+          className="cardButton"
+        >
+          <Button icon labelPosition="left" color="orange">
+            <Icon name="github" />See it on GitHub
+          </Button>
+        </a>
+      </Card.Content>
+    </Card>
+  );
+};
 
 export default ElectronCalc;

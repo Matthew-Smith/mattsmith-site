@@ -1,8 +1,8 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Card, Icon, Image, Button } from "semantic-ui-react";
 
 import { showPopup } from "../../actions";
-import ProjectCard from "./ProjectCard";
 
 const tryItURL = "http://menusystem.mattsmith.site";
 const screenshot =
@@ -10,11 +10,26 @@ const screenshot =
 
 const MenuSystem = ({ showPopup }) => {
   return (
-    <ProjectCard headerText="WebGL TV Menu System" anchorName="MenuSystem">
-      <img src={screenshot} alt="Screenshot" className="mainImage" />
-      <h2>
+    <Card fluid>
+      <Image src={screenshot} />
+      <Card.Content>
+        <Card.Header>WebGL TV Menu System</Card.Header>
+        <Card.Meta>March 2014</Card.Meta>
+        <Card.Description>
+          This is a demonstration of using 2d canvases as textures for
+          displaying text in WebGL as well as being a basic WebGL menu
+          controllable with the keyboard.
+          <h3>Controls:</h3>
+          <li>arrow keys - navigate left, right, up, down</li>
+          <li>m - open and close the menu</li>
+          <li>` - show and hide the background</li>
+          <li>esc - close the menu</li>
+        </Card.Description>
+      </Card.Content>
+      <Card.Content extra>
         <a
           href={tryItURL}
+          className="cardButton"
           onClick={event => {
             event.preventDefault();
             showPopup({
@@ -24,23 +39,20 @@ const MenuSystem = ({ showPopup }) => {
             });
           }}
         >
-          Try it out{" "}
+          <Button icon labelPosition="left" color="green">
+            <Icon name="play" />Try it
+          </Button>
         </a>
-      </h2>
-      <br />
-      View it on{" "}
-      <a href="https://github.com/Matthew-Smith/MenuSystem">GitHub</a>
-      <br />
-      <br />
-      This is a demonstration of using 2d canvases as textures for displaying
-      text in WebGL as well as being a basic WebGL menu controllable with the
-      keyboard.
-      <h3>Controls:</h3>
-      <li>arrow keys - navigate left, right, up, down</li>
-      <li>m - open and close the menu</li>
-      <li>` - show and hide the background</li>
-      <li>esc - close the menu</li>
-    </ProjectCard>
+        <a
+          href="https://github.com/Matthew-Smith/MenuSystem"
+          className="cardButton"
+        >
+          <Button icon labelPosition="left" color="orange">
+            <Icon name="github" />See it on GitHub
+          </Button>
+        </a>
+      </Card.Content>
+    </Card>
   );
 };
 

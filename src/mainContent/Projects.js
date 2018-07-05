@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Card, Grid, Segment } from "semantic-ui-react";
 
 import AtomGlowingCursor from "./ProjectsToShow/AtomGlowingCursor";
 import Deckitron from "./ProjectsToShow/Deckitron";
@@ -12,13 +13,19 @@ import "./styles/mainContent.css";
 class Projects extends Component {
   render() {
     return (
-      <div>
-        <MattSmithSite />
-        <Deckitron />
-        <ElectronCalc />
-        <MenuSystem />
-        <AtomGlowingCursor />
-      </div>
+      <Segment vertical>
+        <Grid container verticalAlign="middle">
+          <Grid.Column width={8}>
+            <Card.Group>
+              <MattSmithSite />
+              <Deckitron />
+              <ElectronCalc />
+              <MenuSystem />
+              <AtomGlowingCursor />
+            </Card.Group>
+          </Grid.Column>
+        </Grid>
+      </Segment>
     );
   }
 }

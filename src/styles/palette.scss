@@ -1,20 +1,22 @@
-$black: #0D0D13;
-$dark-grey: #272D3A;
-$light-grey: #C4C5C9;
-$white: #EBEFF4;
-$off-white: #E2E1E0;
-$purple: #9E559E;
-$orange: #FC8744;
-$blue: #3E92CC;
+$black: #0d0d13;
+$dark-grey: #272d3a;
+$light-grey: #c4c5c9;
+$white: #ffffff;
+$off-white: #e2e1e0;
+$purple: #9e559e;
+$orange: #fc8744;
+$blue: #3e92cc;
 
 $primary-accent: $blue;
 $secondary-accent: $purple;
 $tertiary-accent: $orange;
 $font-white: $white;
-$font-black: #2C2C2C;
+$font-black: #2c2c2c;
 $background-light: $off-white;
 $background-dark: $dark-grey;
 $overlay-color: darken($dark-grey, 30%);
 
-$content-box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
-$content-box-shadow-hover: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+$content-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+  0 6px 6px rgba(0, 0, 0, 0.23);
+$content-box-shadow-hover: 0 14px 28px rgba(0, 0, 0, 0.25),
+  0 10px 10px rgba(0, 0, 0, 0.22);

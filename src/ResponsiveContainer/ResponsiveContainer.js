@@ -5,12 +5,12 @@ import MobileContainer from "./MobileContainer";
 import { Responsive } from "semantic-ui-react";
 
 const ResponsiveContainer = ({ children }) => {
+  let responsiveMobileRange = { ...Responsive.onlyTablet };
+  responsiveMobileRange.minWidth = 0;
+
   return (
     <div>
-      <Responsive {...Responsive.onlyMobile}>
-        <MobileContainer>{children}</MobileContainer>
-      </Responsive>
-      <Responsive {...Responsive.onlyTablet}>
+      <Responsive maxWidth={Responsive.onlyComputer.minWidth}>
         <MobileContainer>{children}</MobileContainer>
       </Responsive>
       <Responsive {...Responsive.onlyComputer}>

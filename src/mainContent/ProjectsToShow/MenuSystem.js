@@ -11,7 +11,7 @@ const screenshot =
 const MenuSystem = ({ showPopup }) => {
   return (
     <Card fluid>
-      <Image src={screenshot} />
+      <Image src={screenshot} className="cardHeader" />
       <Card.Content>
         <Card.Header>WebGL TV Menu System</Card.Header>
         <Card.Meta>March 2014</Card.Meta>

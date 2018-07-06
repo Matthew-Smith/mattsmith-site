@@ -11,7 +11,7 @@ const screenshot =
 const Deckitron = ({ showPopup }) => {
   return (
     <Card fluid>
-      <Image src={screenshot} />
+      <Image src={screenshot} className="cardHeader" />
       <Card.Content>
         <Card.Header>Deckitron - Magic The Gathering Deck Building</Card.Header>
         <Card.Meta>November 2016</Card.Meta>

@@ -7,7 +7,7 @@ const screenshot =
 const ElectronCalc = () => {
   return (
     <Card fluid>
-      <Image src={screenshot} />
+      <Image src={screenshot} className="cardHeader" />
       <Card.Content>
         <Card.Header>Simple Electron Calculator App</Card.Header>
         <Card.Meta>June 2018</Card.Meta>

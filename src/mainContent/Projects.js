@@ -15,7 +15,7 @@ class Projects extends Component {
     return (
       <Segment vertical>
         <Grid container verticalAlign="middle">
-          <Grid.Column width={8}>
+          <Grid.Column>
             <Card.Group>
               <MattSmithSite />
               <Deckitron />
